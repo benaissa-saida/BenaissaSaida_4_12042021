@@ -111,6 +111,23 @@ a:hover {
     color: rgba(255, 255, 255, .6);
 }
 
+.d-bloc .a-btn:hover, 
+.d-bloc .navbar a:hover, 
+.d-bloc .navbar-brand:hover, 
+.d-bloc a:hover .icon-sm, 
+.d-bloc a:hover .icon-md, 
+.d-bloc a:hover .icon-lg, 
+.d-bloc a:hover .icon-xl, 
+.d-bloc h1 a:hover, 
+.d-bloc h2 a:hover, 
+.d-bloc h3 a:hover, 
+.d-bloc h4 a:hover, 
+.d-bloc h5 a:hover, 
+.d-bloc h6 a:hover, 
+.d-bloc p a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
@@ -278,6 +295,30 @@ a[data-lightbox] {
     text-align: center;
 }
 
+a[data-lightbox]:hover::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
+    font-weight: 100;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+a[data-lightbox]:hover img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+}
+
 h1,
 h2,
 h3,
@@ -290,7 +331,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .container {
@@ -303,6 +344,10 @@ a {
 
 .hero-bloc-text-sub {
     font-size: 36px;
+}
+
+li{
+    margin: 8px;
 }
 
 
@@ -400,8 +445,17 @@ h1 {
     color: #FFFFFF!important;
 }
 
+.btn-atomic-tangerine:hover {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+
 .ltc-white {
     color: #FFFFFF!important;
+}
+
+.ltc-white:hover {
+    color: #cccccc!important;
 }
 
 .icon-dark-slate-blue {
@@ -414,11 +468,13 @@ h1 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/webp/la-chouette-agence-banniere.webp");
+    
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/webp/image-de-presentation.webp");
+    
 }
 @media (min-width: 1024px) {
     .bloc {

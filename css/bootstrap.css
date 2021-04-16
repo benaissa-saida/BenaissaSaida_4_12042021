@@ -291,7 +291,7 @@ ul {
 }
 
 .col-xs-12 {
-    width: 100%
+    width: 80%
 }
 @media (min-width:768px) {
     .col-sm-1,
