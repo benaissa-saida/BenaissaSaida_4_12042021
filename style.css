@@ -659,6 +659,11 @@ h1 {
     }
     .voffset-lg {
         margin-top: 30px;
+    } 
+    .tap{
+        display: inline-block;
+        margin: 8px 0;
+        padding: 14px 0;
     }
 }
 
@@ -667,4 +672,10 @@ h1 {
         padding-left: 0;
         padding-right: 0;
     }
+    .tap{
+        display: inline-block;
+        margin: 8px 0;
+        padding: 14px 0;
+    }
+    
 }
