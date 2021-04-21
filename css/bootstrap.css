@@ -275,9 +275,6 @@ ul {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .col-xs-1,
@@ -297,6 +294,12 @@ ul {
 
 .col-xs-12 {
     width: 90vw;
+}
+
+.col-sm-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 @media (min-width:768px) {
     .col-sm-1,
@@ -350,6 +353,32 @@ ul {
 
 }
 
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -372,12 +401,28 @@ ul {
     border-radius: 4px
 }
 
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+
 .btn-group-lg>.btn,
 .btn-lg {
     padding: 10px 16px;
     font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
 }
 
 .collapse {
@@ -422,6 +467,11 @@ ul {
     .navbar-header {
         float: left
     }
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
 }
 
 .navbar-collapse {
@@ -527,6 +577,9 @@ ul {
         padding-bottom: 15px
     }
 }
+.form-group {
+    margin-bottom: 15px;
+}
 
 .btn-group-vertical>.btn-group:after,
 .btn-group-vertical>.btn-group:before,
@@ -578,6 +631,19 @@ ul {
 .panel-body:after,
 .row:after {
     clear: both
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .center-block {
